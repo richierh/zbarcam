@@ -19,7 +19,7 @@ jobs:
           buildozer_version: stable
           command: buildozer android debug# default is buildozer android debug
           # Path to cloned repository. Set if you specified path for `actions/checkout` action.
-          repository_root: # default is .
+          repository_root:. # default is .
           # Working directory where buildozer.spec is located. Set to `src` if buildozer.spec is in `src` directory
           workdir: .# default is .
           # Version of Buildozer to install. By default installs latest release
