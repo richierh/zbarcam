@@ -1,0 +1,32 @@
+name: Build
+on:
+  push:
+
+jobs:
+# Build job. Builds app for Android with Buildozer
+  build-android:
+    name: Build for Android
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build with Buildozer
+        uses: ArtemSBulgakov/buildozer-action@v1
+        id: buildozer
+        with:
+          buildozer_version: stable
+          command: # default is buildozer android debug
+          # Path to cloned repository. Set if you specified path for `actions/checkout` action.
+          repository_root: # default is .
+          # Working directory where buildozer.spec is located. Set to `src` if buildozer.spec is in `src` directory
+          workdir: # default is .
+          # Version of Buildozer to install. By default installs latest release
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: package
+          path: ${{ steps.buildozer.outputs.filename }}
+
