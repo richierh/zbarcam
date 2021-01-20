@@ -20,7 +20,7 @@ jobs:
           #command : buildozer android debug
         
         env:
-         # APP_ANDROID_ARCH: x86
+           APP_ANDROID_ARCH: x86
            APP_TITLE: Halo Semua kota
 
       - name: Upload artifacts
