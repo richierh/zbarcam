@@ -42,7 +42,7 @@ requirements = android,hostpython3==3.8.1,Kivy==58e70b1,libiconv,
     python3==3.8.1,
     pyzbar==0.1.8,
     xcamera==2019.928
-    
+    ,zbarcam
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
