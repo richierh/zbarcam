@@ -36,15 +36,12 @@ version.filename = %(source.dir)s/kivy_garden/zbarcam/version.py
 
 # (list) Application requirements
 # comma seperated e.g. requirements = sqlite3,kivy
-requirements = android,
-    hostpython3==3.8.1,
-    Kivy==58e70b1,
-    libiconv,
+requirements = android,hostpython3==3.8.1,Kivy==58e70b1,libiconv,
     libzbar,
     Pillow==7.0.0,
     python3==3.8.1,
     pyzbar==0.1.8,
-    xcamera==2019.928,
+    xcamera==2019.928
     
 
 # (str) Custom source folders for requirements
