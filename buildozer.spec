@@ -7,7 +7,7 @@ title = ZBarCam Demo
 package.name = zbarcamdemo
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = com.github.andremiras
+package.domain = com.github.richie
 
 # (str) Source code where the main.py live
 source.dir = src
@@ -46,7 +46,7 @@ requirements =
     python3==3.8.1,
     pyzbar==0.1.8,
     xcamera==2019.928,
-    zbarcam
+    
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
